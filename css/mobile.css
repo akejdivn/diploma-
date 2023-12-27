@@ -7,23 +7,25 @@ body {
   }
  
 
+  
+  
   @font-face {
     font-family: OpenSans;
-    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+    src: url("../fonts/OpenSans-Regular.woff");
     font-weight: 400;
     font-style: normal;
   }
   
   @font-face {
     font-family: OpenSans;
-    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+    src: url("../fonts/OpenSans-Bold.woff");
     font-weight: 800;
     font-style: bold;
   }
   
   .container-all{
     font-family: OpenSans, sans-serif;
-    max-width:100%;
+    width: 100%;
     margin: 0 auto;
   }
   /* HEADER */
@@ -32,9 +34,11 @@ body {
     color: #fff;
     position: relative;
     width: 100%;
-    min-height: 425px;
+    min-height: 80vh;
     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
     background-size: cover;
+    background-position: 35% 50%;
+    object-fit: cover;
     display: inline-block;
   }
   
@@ -52,54 +56,61 @@ body {
   }
   
   .container {
-    padding: 25px 200px;
+    padding: 31px 42px;
     position: relative;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 ;
   }
-  
-  .header-menu {
-    display: flex;
+  .menu-nav{
+    fill: white;
   }
   
   .logo {
-    width: 183px;
-    height: 40px;
-  }
-  
-  .nav{
-    margin-left:37vw;
-  }
-  .nav-items {
-    
+    object-fit: cover;
+    width:270px;
+    height: 30%;
     display: flex;
-    list-style: none;
-  }
-  
-  .nav-item {
-    text-transform: uppercase;
-    color: inherit;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 13px;
-  }
-  
-  .nav-item:hover {
-    text-decoration: underline;
-  }
-  
-  .nav-item-first {
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin: 202px   0 0 25%;
   }
 
-  .nav-menu-button{
+  .header-menu{
+   display: flex;
+   justify-content: space-between;
+    margin: 0;
+    width: 100%;
+
+  }
+ 
+  .nav-items {
     display: none;
   }
-  
+  .nav{
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+  }
+ .nav-menu-button{
+    border: none;
+    background: transparent;
+   justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .nav-menu-svg{
+    display:flex;
+    
+    margin-bottom: 5px;
+   
+ }
+
   .header-title {
+    width: 60vw;
     text-transform: uppercase;
-    font-size: 45px;
-    margin-top: 127px;
+    font-size: 35px;
+    margin: 43px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,54 +144,57 @@ body {
 }
 
 .trend{
-  background-repeat: no-repeat;
-  background-size:cover;
-  display: flex;
-  width: 25%;
-  height:320px;
-  object-fit: cover;
-  position: relative;
-}
-
-.trend-first{
-  background-image: url(../img/trend1.jpg);
-  
-}
-
-.trend-second{
-  background-image: url(../img/trend2.jpg);
-  
-}
-
-.trend-third{
-  background-image: url(../img/trend3.jpg);
-  
-}
-
-.trend-fourth{
-  background-image: url(../img/trend4.jpg);
- 
-}
-
-.trend::before{
-  content: "";
-    display: block;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
+    height:63%;
+    object-fit: cover;
+    position: relative;
+  }
+  
+  .trend-first{
+    background-image: url(../img/trend1.jpg);
+    
+  }
+  
+  .trend-second{
+    background-image: url(../img/trend2.jpg);
+    
+  }
+  
+  .trend-third{
+    background-image: url(../img/trend3.jpg);
+    
+  }
+  
+  .trend-fourth{
+    background-image: url(../img/trend4.jpg);
+   
+  }
+  
+  .trend::before{
+    content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
 
 
 .trends{
   margin-top: 31px;
   gap: 5px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .trend-tag-link{
@@ -208,44 +222,40 @@ body {
 
 .trend-item{
   box-sizing: border-box;
-  margin-top: 154px;
-  margin-left: 20px;
+  margin: 154px 20px 14px 17px;
   position: relative;
   border:3px solid#b59f5b;
- width: 320px;
+  width: 80%;
  height: 135px;
  padding-left:34px ;
 }
 
 .trend-item-second{
   box-sizing: border-box;
-  margin-top: 130px;
-  margin-left: 20px;
+  margin: 154px 20px 14px 17px;
   position: relative;
   border:3px solid#b59f5b;
- width: 320px;
+  width: 80%;
  height: 160px;
  padding-left:34px ;
 }
 
 .trend-item-third{
   box-sizing: border-box;
-  margin-top: 154px;
-  margin-left: 20px;
+  margin: 154px 20px 14px 17px;
   position: relative;
   border:3px solid#b59f5b;
- width: 320px;
+ width: 80%;
  height: 135px;
  padding-left:34px ;
 }
 
 .trend-item-fourth{
   box-sizing: border-box;
-  margin-top: 154px;
-  margin-left: 20px;
+  margin: 154px 20px 14px 17px;
   position: relative;
   border:3px solid#b59f5b;
- width: 320px;
+ width: 80%;
  height: 135px;
  padding-left:34px ;
 }
@@ -265,25 +275,25 @@ body {
     /* боковая панель */
   
   aside {
-    display: flex;
-    justify-content: flex-end;
+   display: block;
   }
   
   .content {
-    display: flex;
+    display: block;
     margin: 0 auto;
-    max-width:1200px;
+   width:100%;
   }
   
   .container-aside {
     margin: 0 auto;
+    display: block;
   }
   
   .other-news {
     box-sizing: border-box;
-    padding: 64px 0 0 0;
-    margin-left: 120px;
-    margin-right: 15px;
+    padding: 50px 0 0 0;
+    margin-left: 36px;
+    margin-right: 36px;
   }
   
   .other-news-item {
@@ -327,13 +337,13 @@ body {
   }
   
   .other-news-img {
-    width: 70px;
-    height: 70px;
+    width: 71px;
+    height: 71px;
   }
   
   .other-news-text {
     margin-left: 20px;
-    max-width: 196px;
+    width: 100%;
   }
   
   .other-news-data {
@@ -552,24 +562,26 @@ body {
   
   .container-main {
     margin: 0 auto;
-    height: 48.8%;
-    width: 100%;
+   width:100%;
+   display: block;
   }
-
   
+  .news_item {
+    width: 100%;
+    height: 293px;
+  }
   
   .news-item {
-    
-    height: 17.6%;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     font-size: 14px;
     line-height: 40px;
     padding: 0;
     margin: 60px 0 0 0;
-   
+    max-width: 778px;
     margin-top: 58px;
   }
- 
   
   .news-item-first {
     margin: 0;
@@ -590,13 +602,14 @@ body {
   }
   
   .news-text {
-    margin-left: 30px;
+    margin-left: 35px;
   }
   
   .new-img {
     width: 389px;
     height: 293px;
     flex-shrink:0;
+    margin-left: 35px;
   }
   
   .news-category-item {
@@ -655,8 +668,9 @@ body {
   
 .goods{
     margin: 64px  auto;
-    max-width: 1200px;
+    max-width: 100%;
     text-align: center;
+    position: relative;
     
 }
 
@@ -678,20 +692,26 @@ body {
 }
 
 .product{
-    margin: 66px auto 0 auto; 
+  width: 332px;
+    margin: 66px 20px 0 0; 
     text-align: center;
+    display: block;
 }
+
+
 .product-list{
-    position: relative;
+   margin:47px 41px 0 41px ;
 display: flex;
-justify-content: space-between;
-height: 500px;
-margin-top: 47px;
+flex-wrap: wrap;
+position: relative;
 }
 
 .product-img{
   position: relative;
   margin-left: 20px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
 }
 
 .product-text{
@@ -701,20 +721,20 @@ margin-top: 47px;
     width: 334px;
     height: 268px;
     margin-top: -56px;
-    position:absolute ;
+    z-index: 2;
 }
 
 .product-title{
     text-align: left;
     text-transform: uppercase;
-    position: relative;
 }
+    
 
 .product-description{
     text-align: left;
     font-size: 14px;
     margin-top: -16px;
-    position: relative;
+   
 }
 
 .product-link{
@@ -765,19 +785,21 @@ padding: 20px 26px 20px 26px;
   /* footer */
   
   .footer{
-    margin-top: 64px;
     position: relative;
   }
 
+
+ 
   .social {
-    margin-top: 65px;
+    margin: 250px auto 0;
     background-color: #f4f7f6;
+    width: 90.7%;
     height: 83px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    position: relative;
   }
   
   .social-text{
@@ -803,5 +825,3 @@ padding: 20px 26px 20px 26px;
     text-align: center;
     margin-top: 74px;
   }
-
-  
