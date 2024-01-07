@@ -9,6 +9,51 @@
     <link rel="stylesheet" href="css/mobile.css" media="(max-width:640px)">
 </head>
 <body>
+  <label class="popup-label" for="popup">Открыть окно</label>
+  <input type="checkbox"  class="popup-input" id="popup">
+
+  <div class="popup">
+  <div class="popup-content">
+    <label for="popup" class="popup-close">&times;</label>
+    <h4 class="popup-content-title">ваш фидбек</h4>
+    <form class="popup-select-list">
+      <label for="frequence" class="popup-select-label">Как часто вы заходите на сайт?</label>
+      <select id="frequence" class="popup-select-items">
+        <option>Почти каждый день</option>
+        <option>Раз в несколько дней</option>
+        <option>Раз в несколько недель</option>
+        <option>Несколько раз в год</option>
+      </select>
+    </form>
+
+    
+    <form class="popup-radio-form">
+    <label class="popup-email">Вы подписаны на e-mail рассылку?</label>
+    <div class="popup-radio-items">
+      <label class="popup-radio-label">
+        <input type="radio" class="popup-radio" name="radio-popup">
+        <span class="circle"></span>
+        <span class="popup-radio-name">Да</span>
+      </label>
+     
+        <label class="popup-radio-label">
+          <input type="radio" class="popup-radio" name="radio-popup">
+          <span class="circle"></span>
+          <span class="popup-radio-name">Нет</span>
+        </label>
+    </div>
+    </form>
+
+    <form class="form-wishes">
+      <label class="wishes-label">Расскажите, какой контент вы хотели бы видеть
+        на нашем сайте?
+        <input type="text" class="wishes-input" placeholder="Может, больше рецептов?">
+      </label>
+    </form>
+    <button class="popup-button">отправить</button>
+  </div>
+    
+  </div>
     <div class="container-all">
         <header class="header">
             <div class="container">
@@ -53,8 +98,8 @@
                     <li class="trend-list-item"><a href="#" class="trend-tag-link">lifestyle</a></li>
                     <li class="trend-list-item"></li><a href="#" class="trend-tag-link">INTERIOR</a></li>
                     </ul>
-                    <h4 class="trend-text">Сейчас в тренде: сад 
-                        на подоконнике</h4>
+                    <h4 class="trend-text"><a href="#" class="trend-link">Сейчас в тренде: сад 
+                        на подоконнике</a></h4>
                     </div>
                 </div>
 
@@ -63,9 +108,9 @@
                     <ul class="trend-list">
                     <li class="trend-list-item"><a href="#" class="trend-tag-link">food</a></li>
                     </ul>
-                    <h4 class="trend-text">сыры на красивых 
+                    <h4 class="trend-text"><a href="#" class="trend-link">сыры на красивых 
                         картинках из интернета:
-                        какие они на вкус?</h4>
+                        какие они на вкус?</a></h4>
                     </div>
                 </div>
 
@@ -75,8 +120,8 @@
                     <li class="trend-list-item"><a href="#" class="trend-tag-link">lifestyle</a></li>
                     <li class="trend-list-item"><a href="#" class="trend-tag-link">travel</a></li>
                     </ul>
-                    <h4 class="trend-text">СОБИРАЕМСЯ В ПЕРВЫЙ
-                        ПОХОД В ГОРЫ</h4>
+                    <h4 class="trend-text"><a href="#" class="trend-link">СОБИРАЕМСЯ В ПЕРВЫЙ
+                        ПОХОД В ГОРЫ</a></h4>
                     </div>
                 </div>
 
@@ -86,8 +131,8 @@
                     <li class="trend-list-item"><a href="#" class="trend-tag-link">food</a></li>
                     <li class="trend-list-item"><a href="#" class="trend-tag-link">health</a></li>
                     </ul>
-                    <h4 class="trend-text">СОБИРАЕМСЯ В ПЕРВЫЙ
-                        ПОХОД В ГОРЫ</h4>
+                    <h4 class="trend-text"><a href="#" class="trend-link">Сейчас в тренде: сКОЛЬКО
+                      ВИТАМИНА c В ЛИМОНАХ?</a></h4>
                     </div>
                 </div>
             </div>
