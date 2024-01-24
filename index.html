@@ -14,8 +14,9 @@
 
   <div class="popup">
   <div class="popup-content">
-    <label for="popup" class="popup-close">&times;</label>
+    <button for="popup" class="popup-close"><span class="popup-close-text">закрыть окно</span></button>
     <h4 class="popup-content-title">ваш фидбек</h4>
+    <hr class="poput-title-border-bot">
     <form class="popup-select-list">
       <label for="frequence" class="popup-select-label">Как часто вы заходите на сайт?</label>
       <select id="frequence" class="popup-select-items">
@@ -24,10 +25,6 @@
         <option>Раз в несколько недель</option>
         <option>Несколько раз в год</option>
       </select>
-    </form>
-
-    
-    <form class="popup-radio-form">
     <label class="popup-email">Вы подписаны на e-mail рассылку?</label>
     <div class="popup-radio-items">
       <label class="popup-radio-label">
@@ -42,12 +39,9 @@
           <span class="popup-radio-name">Нет</span>
         </label>
     </div>
-    </form>
-
-    <form class="form-wishes">
       <label class="wishes-label">Расскажите, какой контент вы хотели бы видеть
         на нашем сайте?
-        <input type="text" class="wishes-input" placeholder="Может, больше рецептов?">
+        <textarea class="wishes-input">Может, больше рецептов?</textarea>
       </label>
     </form>
     <button class="popup-button">отправить</button>
@@ -85,8 +79,7 @@
                   
                 </nav>
               </div>
-              <h1 class="header-title">Блог о творчестве, спорте,<br>
-                и образе жизни </h1>
+              <h1 class="header-title">Блог о творчестве, спорте, и образе жизни </h1>
             </div>
         </header>
         <section class="trends-container">
@@ -288,34 +281,41 @@
                     <h4 class="aside-title">Рассылка</h4>
                     <form class="newsletter-form">
                       <label class="newsletter-label"><span class="search-label-text"> Подписка на рассылку</span><input type="email" class="newsletter-input" placeholder="Ваш email-адрес" required></label>
+                      <button type="submit" class="button-newsletter">Подписаться</button>
                     </form>
-                    <button type="submit" class="button-newsletter">Подписаться</button>
+                    
                   </div>
                 </section>
                 <section class="tags">
                   <h4 class="aside-title">Теги</h4>
-                  <div class="tags-items">
-                    <span class="tags-item"><a href="#" class="tags-item-link"> Fashion</a></span>
-                    <span class="tags-item"><a href="#" class="tags-item-link">MuSiC</a></span>
-                    <span class="tags-item"><a href="#" class="tags-item-link">Lifestyle</a></span>
-                    <span class="tags-item"><a href="#" class="tags-item-link">ART</a></span>
-                    <span class="tags-item"><a href="#" class="tags-item-link">Interior</a></span>
-                    <span class="tags-item"><a href="#" class="tags-item-link">travel</a></span>
-                    <span class="tags-item"><a href="#" class="tags-item-link">FOOD</a></span>
-                    <span class="tags-item"><a href="#" class="tags-item-link">HEALTH</a></span>
-                  </div>
+                  <ul class="tags-items">
+                    <li class="tags-item"><a href="#" class="tags-item-link"> Fashion</a></li>
+                    <li class="tags-item"><a href="#" class="tags-item-link">MuSiC</a></li>
+                    <li class="tags-item"><a href="#" class="tags-item-link">Lifestyle</a></li>
+                    <li class="tags-item"><a href="#" class="tags-item-link">ART</a></li>
+                    <li class="tags-item"><a href="#" class="tags-item-link">Interior</a></li>
+                    <li class="tags-item"><a href="#" class="tags-item-link">travel</a></li>
+                    <li class="tags-item"><a href="#" class="tags-item-link">FOOD</a></li>
+                    <li class="tags-item"><a href="#" class="tags-item-link">HEALTH</a></li>
+                  </ul>
                 </section>
       
                 <section class="topics">
                   <h4 class="aside-title">Темы</h4>
-                  <div class="totics-items">
-                    <div class="topics-item"><a href="#" class="topics-link">Красота <sup class="item-quantity">12</sup></a></div>
-                    <div class="topics-item"><a href="#" class="topics-link">Здоровье <sup class="item-quantity">4</sup></a></div>
-                    <div class="topics-item"><a href="#" class="topics-link">Образ жизни <sup class="item-quantity">145</sup></a></div>
-                    <div class="topics-item"><a href="#" class="topics-link">Музыка <sup class="item-quantity">28</sup></a></div>
-                    <div class="topics-item"><a href="#" class="topics-link">Спорт <sup class="item-quantity">62</sup></a></div>
-                    <div class="topics-item"><a href="#" class="topics-link">Йога <sup class="item-quantity">8</sup></a></div>
-                  </div>
+                  <ul class="totics-items">
+                    <li class="topics-item"><a href="#" class="topics-link">Красота</a><span class="item-quantity">12</span></li>
+                    <hr class="topics-item-border-bottom">
+                    <li class="topics-item"><a href="#" class="topics-link">Здоровье</a><span class="item-quantity">4</span></li> 
+                    <hr class="topics-item-border-bottom">
+                    <li class="topics-item"><a href="#" class="topics-link">Образ жизни</a><span class="item-quantity">145</span></li>
+                    <hr class="topics-item-border-bottom">
+                    <li class="topics-item"><a href="#" class="topics-link">Музыка</a><span class="item-quantity">28</span></li>
+                    <hr class="topics-item-border-bottom">
+                    <li class="topics-item"><a href="#" class="topics-link">Спорт</a><span class="item-quantity">62</span></li>
+                    <hr class="topics-item-border-bottom">
+                    <li class="topics-item"><a href="#" class="topics-link">Йога</a><span class="item-quantity">8</span></li>
+                    <hr class="topics-item-border-bottom">
+                    </ul>
                 </section>
               </section>
             </div>
@@ -326,7 +326,12 @@
             <h3 class="goods-title">Наши товары</h3>
             <div class="product-list">
             <article class="product">
+              <picture class="product-picture">
+                <source media="(min-width: 1200px)" srcset="./img/shop-item-desk1.jpg">
+                <source media="(min-width: 641px )" srcset="./img/shop-item-tablet1.jpg">
+                <source media="(max-width: 640px)" srcset="./img/shop-item-mobile1.jpg">
                 <img src="./img/shop-item-desk1.jpg" alt="shop" class="product-img">
+              </picture>
                 <div class="product-text">
                     <h3 class="product-title">Подушки на диван</h3>
                     <p class="product-description">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="product-link">здесь</a>.</p>
@@ -337,7 +342,12 @@
             </article>
 
             <article class="product">
+              <picture class="product-picture">
+                <source media="(min-width: 1200px)" srcset="./img/shop-item-desk2.jpg">
+                <source media="(min-width: 641px )" srcset="./img/shop-item-tablet2.jpg">
+                <source media="(max-width: 640px)" srcset="./img/shop-item-mobile2.jpg">
                 <img src="./img/shop-item-desk2.jpg" alt="shop" class="product-img">
+              </picture>
                 <div class="product-text">
                     <h3 class="product-title">Кукла «Зайчик»</h3>
                     <p class="product-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="product-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
@@ -347,7 +357,12 @@
             </article>
 
             <article class="product">
+              <picture class="product-picture">
+                <source media="(min-width: 1200px)" srcset="./img/shop-item-desk3.jpg">
+                <source media="(min-width: 641px )" srcset="./img/shop-item-tablet3.jpg">
+                <source media="(max-width: 640px)" srcset="./img/shop-item-mobile3.jpg">
                 <img src="./img/shop-item-desk3.jpg" alt="shop" class="product-img">
+              </picture>
                 <div class="product-text">
                     <h3 class="product-title">Шестиугольная рамка</h3>
                     <p class="product-description">Необычная рамка для украшения дома из видео <a href="#" class="product-link">«Как сделать рамку из подручных средств за 30 минут»</a></p>
@@ -363,17 +378,24 @@
         <footer class="footer">
           <div class="container">
             <section class="footer-section">
-              <div class="social">
-                <a href="#" class="social-link">
-                  <p class="social-text">dribbble</p><img src="https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg" alt="dribbble" class="social-icon">
+              <ul class="social ">
+                <li class="social-item">
+                <a href="#" class="social-link social-link-dribble">
+                  <div class="link-icon"></div>
+                  <p class="social-text ">dribbble</p>
                 </a>
+              </li>
+              <li class="social-item social-link-pinterest">
                 <a href="#" class="social-link">
-                  <p class="social-text">pinterest</p><img src="https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg" alt="pinterest" class="social-icon">
+                  <p class="social-text">pinterest</p>
                 </a>
+              </li>
+                <li class="social-item social-link-tumbler">
                 <a href="#" class="social-link">
-                  <p class="social-text">tumbler</p><img src="https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg" alt="tumblr" class="social-icon">
+                  <p class="social-text">tumbler</p>
                 </a>
-              </div>
+              </li>
+              </ul>
             </section>
             <p class="copyright">Copyright © 2009–2019 City Blog LLC</p>
           </div>
