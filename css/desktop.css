@@ -968,15 +968,12 @@ margin-bottom: 36px;
     list-style: none;
     z-index: 0;
   }
-  .social-link{
-    background-image: url(../svg/001-dribbble.svg);
-    z-index: 3;
-  }
   
 
   .social-item{
     display: flex;
     position: relative;
+    margin-left: 28px;
   }
   .social-text{
     position: absolute;
@@ -990,12 +987,21 @@ margin-bottom: 36px;
   }
 
   .social-link{
-    background: url(../svg/001-dribbble.svg);
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
+  }
+  .social-link-dribble{
+    background: url(../svg/001-dribbble.svg);
+  }
+  
+  .social-link-pinterest{
+    background-image: url(../svg/001-pinterest.svg);
   }
 
+  .social-link-tumbler{
+    background-image: url(../svg/003-tumblr.svg);
+  }
   
   
   
