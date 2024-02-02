@@ -217,7 +217,6 @@ margin-bottom: 36px;
     color: #fff;
     position: relative;
     width: 100%;
-    min-height: 425px;
     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
     background-size: cover;
     display: inline-block;
@@ -240,7 +239,7 @@ margin-bottom: 36px;
   
   .container {
     position: relative;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px
   }
@@ -248,6 +247,7 @@ margin-bottom: 36px;
   .header-menu {
     display: flex;
     justify-content: space-between;
+    margin: 0;
   }
   
   .logo {
@@ -326,6 +326,7 @@ margin-bottom: 36px;
   position: relative;
   display: flex;
   align-items: flex-end;
+  padding: 0 20px 15px 20px;
 }
 
 .trend-first{
@@ -402,7 +403,6 @@ margin-bottom: 36px;
 
 .trend-item{
   box-sizing: border-box;
-  margin: 0 26px 18px 20px;
   position: relative;
   border:3px solid#b59f5b;
   width: 100%;
@@ -411,7 +411,6 @@ margin-bottom: 36px;
 
 .trend-item-second{
   box-sizing: border-box;
-  margin: 0 26px 18px 20px;
   position: relative;
   border:3px solid#b59f5b;
   width: 100%;
@@ -420,7 +419,6 @@ margin-bottom: 36px;
 
 .trend-item-third{
   box-sizing: border-box;
-  margin: 0 26px 18px 20px;
   position: relative;
   border:3px solid#b59f5b;
  width: 100%;
@@ -429,7 +427,6 @@ margin-bottom: 36px;
 
 .trend-item-fourth{
   box-sizing: border-box;
-  margin: 0 26px 18px 20px;
   position: relative;
   border:3px solid#b59f5b;
  width: 100%;
@@ -458,6 +455,7 @@ margin-bottom: 36px;
     margin-left: 120px;
     margin-right: 15px;
     display: flex;
+    width: 273px;
   }
   
   .content {
@@ -498,9 +496,7 @@ margin-bottom: 36px;
     text-align: center;
     font-weight: 800;
     font-size: 14px;
-    line-height: 29px;
     text-transform: uppercase;
-    margin-left: 55px;
   }
   
   .other-news-title::after {
@@ -541,6 +537,7 @@ margin-bottom: 36px;
   .search {
     margin-top: 60px;
     width: 16vw;
+    box-sizing: border-box;
   }
   
   .search-label-text {
@@ -573,6 +570,7 @@ margin-bottom: 36px;
     background-color: #f4f7f6;
     border: none;
     outline: none;
+    box-sizing: border-box;
   }
   
   .search-input:focus {
@@ -644,6 +642,7 @@ margin-bottom: 36px;
     width: 100%;
     height: 50px;
     padding-left: 19px;
+    box-sizing: border-box;
   }
   
   .newsletter-input:focus {
@@ -684,7 +683,7 @@ margin-bottom: 36px;
   
   .tags-item {
     display: flex;
-    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 6px;
     font-weight: 800;
     text-align: center;
@@ -700,6 +699,7 @@ margin-bottom: 36px;
   .tags-item-link{
     color:inherit;
     text-decoration:none;
+   
   }
   
   .topics {
@@ -716,24 +716,26 @@ margin-bottom: 36px;
     font-weight: 800;
     font-size: 14px;
     display: flex;
-  }
-  
-  .topics-item-border-bottom{
-    width: 272px;
-    height: 1px;
-    background-color: #eeeeee;
-    border: none;
-    margin-bottom: 33px;
+    flex-wrap: wrap;
     
   }
   
   .topics-item:hover {
     color: #b59f5b;
   }
+  .topics-item::after{
+    content: "";
+    border-bottom:solid #eeeeee;
+    width:100%;
+    height: 2px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
   
   .item-quantity {
+    order: 0;
     color: #b59f5b;
-    display: flex;
+    display: block;
     align-self: start;
     font-size: 12px;
     margin-left: 6px;
@@ -743,6 +745,8 @@ margin-bottom: 36px;
     text-decoration: none;
     color: inherit;
   }
+
+ 
   
   /* основные новости */
   /* MAIN */
@@ -758,9 +762,9 @@ margin-bottom: 36px;
     height: 17.6%;
     display: flex;
     font-size: 14px;
-    line-height: 40px;
     padding: 0;
     margin: 60px 0 0 0;
+    align-items: flex-start;
   }
  
   
@@ -883,10 +887,7 @@ margin-bottom: 36px;
   flex-shrink: 0;
 }
 
-.product-img{
-  position: relative;
-  margin-left: 20px;
-}
+
 
 .product-text{
     box-sizing: border-box;
@@ -935,7 +936,9 @@ margin-bottom: 36px;
 .product-price{
     text-align: left;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 15px;
+    margin: 0;
+   text-decoration: line-through;
 }
 
 .product-price-rabbit{
@@ -958,12 +961,17 @@ margin-bottom: 36px;
     width: 142px;
 }
 
+.product-button:hover{
+background-color: #323232;
+}
+
 
   /* footer */
   
   .footer{
     margin-top: 64px;
     position: relative;
+    max-width: 1200px;
   }
   .container{
     margin: auto;
@@ -987,7 +995,6 @@ margin-bottom: 36px;
   .social-item{
     display: flex;
     position: relative;
-    margin-left: 28px;
   }
   .social-text{
     position: absolute;
