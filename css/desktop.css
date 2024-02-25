@@ -924,8 +924,12 @@ margin-bottom: 36px;
 }
 
 .price{
-  display: ;
+  display:flex ;
   flex-direction: column;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-price-sale{
@@ -933,6 +937,7 @@ margin-bottom: 36px;
     font-weight: 700;
     font-size: 20px;
     display: inline;
+    margin: 0;
     
 }
 
@@ -945,11 +950,6 @@ margin-bottom: 36px;
    display: inline;
 }
 
-.product-price-rabbit{
-    margin-top: 50px;
-    
-}
-
 
 .product-button{
     cursor: pointer;
@@ -957,12 +957,12 @@ margin-bottom: 36px;
     font-weight: 700;
     text-align: right;
     justify-content:right;
-    display: ;
     color: white;
     border: none;
     background-color: #b59f5b;
     padding: 20px 26px 20px 26px;
     width: 142px;
+  height: 58px;
 }
 
 .product-button:hover{
